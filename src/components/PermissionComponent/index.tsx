@@ -10,6 +10,7 @@ const PermissionComponent: React.FC<PermissionComponentProps> = ({ role, childre
     const [permissions, setPermissions] = useState([] as string[]);
 
     useEffect(() => {
+
         async function loadRoles() {
 
             console.log("Rotas", role);
@@ -19,21 +20,25 @@ const PermissionComponent: React.FC<PermissionComponentProps> = ({ role, childre
             );
             setPermissions(findRole);
 
+            // if (role !== "ROLE_USER") {
+            //     console.log("Aqui é o IF:::", role)
 
-            // if (role === "ROLE_USER") {
-
-            //     const response = await api.get("/users/roles");
-            //     const findRole = (await response).data.find((r: string) => r === "ROLE_USER")
-            //     setPermissions(findRole);
-            // } else {
             //     const response = await api.get("/companys/roles");
-            //     const findRole = (await response).data.find((r: string) => r === "ROLE_ADMIN")
+            //     const findRole = response.data.some((r: string) => r === "ROLE_ADMIN")
             //     setPermissions(findRole);
-            // }    
+            //     console.log(`é company? ${role}`);
+            //     console.log(`é company? findRole? ${findRole}`);
+            // } else {
+            //     const response = await api.get("/users/roles");
+            //     const findRole = response.data.some((r: string) => r === "ROLE_USER")
+            //     setPermissions(findRole);
+            //     console.log(`é user? ${role}`);
+            //     console.log(`é user? findRole? ${findRole}`);
+            // }
         }
-        console.log("LoadRotas", role);
 
         loadRoles();
+
     }, [role]);
 
     return (

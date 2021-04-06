@@ -6,6 +6,7 @@ import "./login.css";
 // import login from '../../assets/images/login.png'
 import { MdEmail, MdLock } from 'react-icons/md';
 import { HiEye, HiEyeOff } from 'react-icons/hi';
+import CheckboxEmpresa from '../../components/CheckboxEmpresa';
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -38,6 +39,8 @@ const Login: React.FC = () => {
             <form className="login-right" onSubmit={handleSubmit}>
                 <h1>Acessar Plataforma</h1>
 
+
+
                 <div className="login-loginInputEmail">
                     <MdEmail />
                     <input type="email"
@@ -69,6 +72,8 @@ const Login: React.FC = () => {
                         )}
                     </div>
                 </div>
+
+                <CheckboxEmpresa />
 
                 <button type="submit"> Entrar </button>
 

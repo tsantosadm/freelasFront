@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Role, User, Avatar } from './styles';
+import { Container, User, Avatar } from './styles';
 
 interface UserProps {
     nickname: string;
@@ -22,11 +22,10 @@ const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
 const UserList: React.FC = () => {
     return (
         <Container >
-            <Role>Disponível - 1</Role>
+            {/* <Role>Disponível - 1</Role> */}
             <UserRow nickname="Usuário" />
 
-            <Role>Offline - 12</Role>
-            <UserRow nickname="Usuário" isBot />
+            {/* <Role>Offline - 12</Role> */}
             <UserRow nickname="Usuário" />
             <UserRow nickname="Usuário" />
             <UserRow nickname="Usuário" />
@@ -43,8 +42,9 @@ const UserList: React.FC = () => {
             <UserRow nickname="Usuário" />
             <UserRow nickname="Usuário" />
             <UserRow nickname="Usuário" />
-            <UserRow nickname="Usuário" isBot />
-            <UserRow nickname="Usuário" isBot />
+            <UserRow nickname="Usuário" />
+            <UserRow nickname="Usuário" />
+            <UserRow nickname="Usuário" />
 
         </Container>
     )

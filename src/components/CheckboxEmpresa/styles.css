@@ -1,0 +1,17 @@
+.checkedBOX {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+.checkedBOX label {
+    margin-top: 12px;
+    margin-left: 15px;
+    background: transparent;
+}
+
+.checkedBOX input {
+    margin-top: 30px;
+    background: transparent;
+}
