@@ -1,0 +1,115 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    min-height: 200px;
+    margin: 10px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 71, 71);
+    padding: 5px;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    justify-content: space-between;
+}
+
+.div-formT {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.options span {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+
+.div-formT span {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.div-form span {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.form-input {  
+    background-color: transparent;
+}
+
+.form-input input {
+    background: gray;
+    width: 700px;
+    height: 40px;
+    font-size: 20px;
+    outline: 0;
+}
+
+.form-input textarea {
+    background: gray;
+    outline: 0;
+    font-size: 20px;
+    resize: none;
+}
+
+.div-button {
+    background-color: green;
+}
+
+.div-button button {
+    background-color: transparent;
+}
+
+.divline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.line {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+    height: 1px;
+    width: 100%; 
+}
+
+.line div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    background-color: gray;
+
+}
+
