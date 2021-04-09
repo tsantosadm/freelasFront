@@ -14,7 +14,7 @@ const PermissionComponent: React.FC<PermissionComponentProps> = ({ role, childre
         async function loadRoles() {
 
             console.log("Rotas", role);
-            const response = await api.get("/companys/roles");
+            const response = await api.get("/users/roles");
             const findRole = response.data.some((r: string) =>
                 role?.split(",").includes(r)
             );

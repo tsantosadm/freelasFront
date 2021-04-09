@@ -37,7 +37,7 @@ const RegisterCompany: React.FC = () => {
     return (
         <div className="login">
             <div className="login-logo">
-                <img src={login} alt="login" />
+                {/* <img src={login} alt="login" /> */}
             </div>
 
             <form className="login-right" onSubmit={handleSubmit}>
